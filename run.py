@@ -47,7 +47,7 @@ def play_game():
 
         else:
             available_attempts -= 1
-            print(f"Wrong! You have {available_attempts} attempts remaining")
+            print(f"Wrong! You have {available_attempts} attempt(s) remaining")
 
         """
         If the user has guessed all 5 letters correctly, the hidden word is
@@ -55,7 +55,7 @@ def play_game():
         added to the score for tallying once the game is finished. If the user
         has used all their attempts and has still not guessed the word the
         hidden word is displayed, the user is given a commiseration message.
-        """    
+        """
 
         if correct_letter == 5:
             print(f"\nWell done! You correctly guessed:'{selected_word}'.")
