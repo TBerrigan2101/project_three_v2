@@ -25,16 +25,16 @@ def play_game():
         correct_letter = 0
         guess = input('\nGuess a letter in the hidden word: ').lower()
         validate_input(guess)
-
+        
         if guess in selected_word:
             if guess in selected_word_dict:
                 selected_word_dict.pop(guess)
             elif guess == ' ':
                 guess.strip(guess)
             else:
-                print('this letter has been guessed, please guess again')
-            continue
-
+                print('this letter has already been guessed, try again')
+                continue
+        
             print(f"\nNice job, '{guess}' is in the word")
             guessed_letter = guessed_letter + guess
 
@@ -43,7 +43,7 @@ def play_game():
                     print(f"{letter}", end="")
                     correct_letter += 1
                 else:
-                    print(f"_", end="")
+                    print("_", end="")
 
         else:
             available_attempts -= 1
@@ -51,7 +51,7 @@ def play_game():
 
         if correct_letter == 5:
             print(f"\nWell done! You correctly guessed:'{selected_word}'.")
-            print(f"You have scored a point.")
+            print("You have scored a point.")
             return 1
         elif available_attempts == 0:
             print(f"\nHard luck! The hidden word is'{selected_word}'")
