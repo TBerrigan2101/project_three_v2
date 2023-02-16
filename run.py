@@ -49,6 +49,14 @@ def play_game():
             available_attempts -= 1
             print(f"Wrong! You have {available_attempts} attempts remaining")
 
+        """
+        If the user has guessed all 5 letters correctly, the hidden word is
+        displayed, the user is given a congratulatory message. A point is then
+        added to the score for tallying once the game is finished. If the user
+        has used all their attempts and has still not guessed the word the
+        hidden word is displayed, the user is given a commiseration message.
+        """    
+
         if correct_letter == 5:
             print(f"\nWell done! You correctly guessed:'{selected_word}'.")
             print("You have scored a point.")
@@ -56,6 +64,11 @@ def play_game():
         elif available_attempts == 0:
             print(f"\nHard luck! The hidden word is'{selected_word}'")
             return 0
+
+    """
+    Validates user input to check for numbers, blank spaces,
+    special characters and alerts user what has happened.
+    """
 
 
 def validate_input(user_input):
@@ -67,6 +80,10 @@ def validate_input(user_input):
         print('Your entry must contain a letter')
     else:
         None
+
+    """
+    Runs the game and adds the total score.
+    """
 
 
 def run_game():
