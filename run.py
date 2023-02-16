@@ -1,9 +1,9 @@
 import random
 
 WORD = ['adult', 'agent', 'anger', 'apple', 'board', 'brain', 'bread',
-        'break', 'brown', 'buyer', 'cause', 'chain', 'chair', 'chest', 'chief', 
-        'child', 'claim', 'class', 'clock', 'coach', 'dance', 'death', 'depth', 
-        'doubt', 'draft', 'drama', 'dream', 'dress', 'drink', 'drive', 'earth', 
+        'break', 'brown', 'buyer', 'cause', 'chain', 'chair', 'chest', 'chief',
+        'child', 'claim', 'class', 'clock', 'coach', 'dance', 'death', 'depth',
+        'doubt', 'draft', 'drama', 'dream', 'dress', 'drink', 'drive', 'earth',
         'enemy', 'entry', 'error', 'event', 'faith', 'fault', 'field', 'fight', 
         'final', 'frame', 'front', 'fruit', 'glass', 'grant', 'grass', 'heart', 
         'horse', 'hotel', 'house', 'image', 'index', 'input', 'issue', 'judge', 
@@ -43,7 +43,7 @@ def play_game():
 
     while available_attempts > 0:
         correct_letter = 0
-        guess = input('\nGuess a letter in the hidden word: ').lower()
+        guess = input('\nGuess a letter in the hidden word:\n').lower()
         validate_input(guess)
         if guess in selected_word:
             if guess in selected_word_dict:
@@ -68,11 +68,12 @@ def play_game():
             print(f"Wrong! You have {available_attempts} attempt(s) remaining")
 
         """
-        If the user has guessed all 5 letters correctly, the hidden word is
-        displayed, the user is given a congratulatory message. A point is then
-        added to the score for tallying once the game is finished. If the user
-        has used all their attempts and has still not guessed the word the
-        hidden word is displayed, the user is given a commiseration message.
+        If the user has guessed all 5 letters correctly, the hidden 
+        word is displayed, the user is given a congratulatory message. 
+        A point is then added to the score for tallying once the game is 
+        finished. If the user has used all their attempts and has still not 
+        guessed the word the hidden word is displayed, the user is given 
+        a commiseration message.
         """
 
         if correct_letter == 5:
