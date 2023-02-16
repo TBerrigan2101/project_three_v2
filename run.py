@@ -1,6 +1,26 @@
 import random
 
-WORD = ['abuse', 'agent', 'anger', 'apple', 'award', 'basis', 'beach']
+WORD = ['adult', 'agent', 'anger', 'apple', 'board', 'brain', 'bread',
+        'break', 'brown', 'buyer', 'cause', 'chain', 'chair', 'chest', 'chief', 
+        'child', 'claim', 'class', 'clock', 'coach', 'dance', 'death', 'depth', 
+        'doubt', 'draft', 'drama', 'dream', 'dress', 'drink', 'drive', 'earth', 
+        'enemy', 'entry', 'error', 'event', 'faith', 'fault', 'field', 'fight', 
+        'final', 'frame', 'front', 'fruit', 'glass', 'grant', 'grass', 'heart', 
+        'horse', 'hotel', 'house', 'image', 'index', 'input', 'issue', 'judge', 
+        'knife', 'layer', 'level', 'light', 'limit', 'lunch', 'major', 'march', 
+        'match', 'metal', 'model', 'money', 'month', 'motor', 'mouth', 'music', 
+        'night', 'noise', 'north', 'novel', 'nurse', 'offer', 'order', 'other', 
+        'owner', 'panel', 'paper', 'party', 'peace', 'phase', 'phone', 'piece', 
+        'pilot', 'pitch', 'place', 'plane', 'plant', 'price', 'pride', 'prize', 
+        'proof', 'queen', 'radio', 'range', 'ratio', 'reply', 'right', 'river',
+        'round', 'route', 'rugby', 'scale', 'scene', 'scope', 'shock', 'sight', 
+        'skill', 'sleep', 'smile', 'smoke', 'sound', 'south', 'space', 'speed', 
+        'spite', 'sport', 'squad', 'stone', 'store', 'study', 'stuff', 'style', 
+        'sugar', 'table', 'taste', 'theme', 'thing', 'title', 'total', 'touch', 
+        'tower', 'track', 'trade', 'train', 'trend', 'trial', 'trust', 'truth', 
+        'uncle', 'union', 'unity', 'value', 'video', 'visit', 'voice', 'waste', 
+        'watch', 'water', 'woman', 'world', 'youth'
+        ]
 
 
 def play_game():
