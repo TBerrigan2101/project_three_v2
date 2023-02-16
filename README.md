@@ -1,5 +1,6 @@
 # 5-5-5 Word Game
 
+![device mockup](read-me-images/device-mockup.png)
 
 5-5-5 is a game run through a Python terminal through the Heroku app.
 
@@ -9,7 +10,7 @@ Five Words. Five Letters. Five Lives. 5-5-5.
 
 If the user guesses the word correctly they gain a point and move on to the next round. If they fail to guess the word and use all their lifelines they gain no points and proceed to the next round. The 'hidden' word is revealed at the end of each round and the users total score is tallied at the end of the game.
 
-Live site: https://tberrigan2101.github.io/project-two/
+Live game: https://game-555.herokuapp.com/
 
 
 
@@ -61,18 +62,29 @@ This would have involved another level of validation to make sure that the users
 
 On the advice of my mentor I removed it from the game to keep the code as simple as possible given the time restrictions and make sure I got the basics of the game working.
 
-I had coded this in an earlier version of my project which is listed below. 
+I had coded this in an earlier version of my project which is shown below. 
+
+![guess option](read-me-images/guess_option.png)
 
 
 ## 4. Testing 
 
 I manually tested the code using the following tools:
 
-The Code Institute Linter - no errors returned
-The other editors - no errors returned
+The Code Institute Linter - no syntax errors returned but it made a commnent about trailing whitespace. I tried to correct this but I was limited by the line length and then I had to allow for the indentation of the square brackets. I tried to use a backslash but was told they had no effect within brackets.
 
-I tested the code myself in my local terminals in Gitpod and I also used Replit for initial writing of my code and tested it there too. The code performed as expected with no errors generated from the code.
+![code institute python linter](read-me-images/CI_python_linter.png)
 
+PythonChecker.com - no major errors returned
+
+![python checker](read-me-images/python_checker.png)
+
+
+
+I tested the code myself in my local terminals in Gitpod and Heroku and I also used Replit for initial writing of my code and tested it there too. The code performed as expected with no errors generated from the code.
+
+![python checker](read-me-images/terminal_test1.png)
+![python checker](read-me-images/terminal_test2.png)
 
 ### 4.1 Bugs
 
@@ -84,8 +96,9 @@ I tested the code myself in my local terminals in Gitpod and I also used Replit 
 
 - The only other minor change was that 'Round 1' was displaying as 'Round 0' due to the structure of the loop that ran the game but that was easily fixed.
 
-### Other bugs: blanks
+### Other bugs: 
 
+- There is an issue with how input handles blanks if a letter is in the input with a blank. I tried various ways of handling this but I kept getting the same result print statement of 'Your entry must contain a letter'. I will continue to try and solve it at a later date.
 
 ## 5. Deployment
 
@@ -101,10 +114,10 @@ Steps taken:
 
 ## 6. Credits 
 
-'' '' for the list of words
-'' ' ' for the code I edited to create the display letter and blank letter when the user submitted their guess.
-My mentor Rohit Sharma also helped me write additional code and cleaned up my earlier attempt. 
-My original code is listed here in Replit and the code that Rohit edited is listed here for comparison.
+- https://7esl.com/5-letter-words/ for the list of words
+- https://www.youtube.com/watch?v=JNXmCOumNw0 for the code I edited to create the display letter and blank letter when the user submitted their guess.
+- My mentor Rohit Sharma also helped me write additional code and cleaned up my earlier attempt. https://replit.com/@ThomasBerrigan/MentorCode
+- My original code is listed here in Replit and the code that Rohit edited is listed here for comparison. https://replit.com/@ThomasBerrigan/Simple#main.py
 
 
 ## 7. Acknowledgements
